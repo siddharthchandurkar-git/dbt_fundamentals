@@ -12,7 +12,7 @@ models:
         data_tests:
           - unique
           - not_null
-      - name: status
+      - name: order_status  # Changed from status to match your SQL alias!
         data_tests:
           - accepted_values:
               arguments:
@@ -21,6 +21,7 @@ models:
                   - shipped
                   - placed
                   - return_pending
+                  - returned
       - name: customer_id
         data_tests:
           - relationships:
