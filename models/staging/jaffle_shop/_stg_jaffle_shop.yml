@@ -17,6 +17,7 @@ models:
           - unique
           - not_null
       - name: order_status  # Changed from status to match your SQL alias!
+        description: "{{ doc('order_status')}}"
         data_tests:
           - accepted_values:
               arguments:
